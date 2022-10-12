@@ -1,9 +1,9 @@
 #include "ros/ros.h"
 #include "std_msgs/Int32.h"
 
-void msgCallback(const std_msgs::Int32::ConstPtr& msg)
+void msgCallback(const std_msgs::Int32::ConstPtr& num)
 {
-	ROS_INFO("Received msg : %d", msg->data);
+	ROS_INFO("Received num : %d", num->data);
 }
 
 int main(int argc, char** argv)

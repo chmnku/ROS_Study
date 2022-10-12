@@ -8,15 +8,15 @@ int main(int argc, char** argv)
 	ros::Publisher pub = nh.advertise<std_msgs::Int32>("TopicName", 100);
 	ros::Rate loop_rate(10);
 
-	std_msgs::Int32 msg;
+	std_msgs::Int32 num;
 	
-	msg.data = 0;
+	num.data = 0;
 	
 	while(ros::ok())
 	{
-		pub.publish(msg);
+		pub.publish(num);
 		loop_rate.sleep();
-		msg.data++;		
+		num.data++;		
 	}
 
 
