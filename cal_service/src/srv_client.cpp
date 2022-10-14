@@ -5,7 +5,7 @@
 int main(int argc, char** argv)
 {
 	ros::init(argc, argv, "srv_client");
-		
+
 	if (argc != 3)
 	{
 		ROS_INFO("ERROR: INVALID VALUE");
